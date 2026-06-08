@@ -2,7 +2,6 @@ package model;
 
 import java.io.Serializable;
 
-// Classe abstrata para servir de base (Herança)
 public abstract class Pessoa implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -14,9 +13,10 @@ public abstract class Pessoa implements Serializable {
         this.idade = idade;
     }
 
-    // Getters e Setters
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
     public int getIdade() { return idade; }
     public void setIdade(int idade) { this.idade = idade; }
+
+    public abstract String exibirInfo();
 }
