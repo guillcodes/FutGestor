@@ -1,22 +1,23 @@
 package view;
 
+import controller.JogadorController;
 import controller.TimeController;
 import util.Logger;
 
 import java.util.Scanner;
 
-/**
- * View do padrão MVC — interface com o usuário via console.
- * Chama o TimeController para todas as operações.
- */
 public class Menu {
 
-    private TimeController controller;
+    private TimeController timeController;
+    private JogadorController jogadorController;
+    private JogadorView jogadorView;
     private Scanner scanner;
 
     public Menu() {
-        this.controller = new TimeController();
-        this.scanner    = new Scanner(System.in);
+        this.scanner           = new Scanner(System.in);
+        this.jogadorController = new JogadorController();
+        this.timeController    = new TimeController(jogadorController);
+        this.jogadorView       = new JogadorView(jogadorController, scanner);
     }
 
     public void exibir() {
@@ -27,13 +28,15 @@ public class Menu {
             System.out.println("╠══════════════════════════════╣");
             System.out.println("║  1. Cadastrar Time           ║");
             System.out.println("║  2. Listar Times             ║");
-            System.out.println("║  3. Cadastrar Jogador        ║");
-            System.out.println("║  4. Listar Jogadores         ║");
+            System.out.println("║  3. Editar Time              ║");
+            System.out.println("║  4. Remover Time             ║");
             System.out.println("║  5. Cadastrar Técnico        ║");
             System.out.println("║  6. Listar Técnicos          ║");
-            System.out.println("║  7. Adicionar Jogador a Time ║");
-            System.out.println("║  8. Definir Técnico do Time  ║");
-            System.out.println("║  9. Ver Elenco do Time       ║");
+            System.out.println("║  7. Remover Técnico          ║");
+            System.out.println("║  8. Gestão de Jogadores ►    ║");
+            System.out.println("║  9. Associar Jogador a Time  ║");
+            System.out.println("║ 10. Definir Técnico do Time  ║");
+            System.out.println("║ 11. Ver Elenco do Time       ║");
             System.out.println("║  0. Sair                     ║");
             System.out.println("╚══════════════════════════════╝");
             System.out.print("Escolha: ");
@@ -46,16 +49,18 @@ public class Menu {
             }
 
             switch (opcao) {
-                case 1 -> cadastrarTime();
-                case 2 -> controller.listarTimes();
-                case 3 -> cadastrarJogador();
-                case 4 -> controller.listarJogadores();
-                case 5 -> cadastrarTecnico();
-                case 6 -> controller.listarTecnicos();
-                case 7 -> associarJogador();
-                case 8 -> associarTecnico();
-                case 9 -> verElenco();
-                case 0 -> {
+                case 1  -> cadastrarTime();
+                case 2  -> timeController.listarTimes();
+                case 3  -> editarTime();
+                case 4  -> removerTime();
+                case 5  -> cadastrarTecnico();
+                case 6  -> timeController.listarTecnicos();
+                case 7  -> removerTecnico();
+                case 8  -> jogadorView.exibir();
+                case 9  -> associarJogador();
+                case 10 -> associarTecnico();
+                case 11 -> verElenco();
+                case 0  -> {
                     Logger.log("Sistema encerrado pelo usuário.");
                     System.out.println("Até logo!");
                 }
@@ -70,17 +75,24 @@ public class Menu {
         String nome = scanner.nextLine().trim();
         System.out.print("Cidade: ");
         String cidade = scanner.nextLine().trim();
-        controller.cadastrarTime(nome, cidade);
+        timeController.cadastrarTime(nome, cidade);
     }
 
-    private void cadastrarJogador() {
-        System.out.print("Nome do jogador: ");
-        String nome = scanner.nextLine().trim();
-        int idade = lerInteiro("Idade: ");
-        System.out.print("Posição (ex: Atacante, Goleiro): ");
-        String posicao = scanner.nextLine().trim();
-        int camisa = lerInteiro("Número da camisa: ");
-        controller.cadastrarJogador(nome, idade, posicao, camisa);
+    private void editarTime() {
+        System.out.print("Nome atual do time: ");
+        String nomeAntigo = scanner.nextLine().trim();
+        System.out.print("Novo nome (Enter para manter): ");
+        String novoNome = scanner.nextLine().trim();
+        System.out.print("Nova cidade (Enter para manter): ");
+        String novaCidade = scanner.nextLine().trim();
+        timeController.editarTime(nomeAntigo,
+                novoNome.isEmpty() ? null : novoNome,
+                novaCidade.isEmpty() ? null : novaCidade);
+    }
+
+    private void removerTime() {
+        System.out.print("Nome do time a remover: ");
+        timeController.removerTime(scanner.nextLine().trim());
     }
 
     private void cadastrarTecnico() {
@@ -90,7 +102,12 @@ public class Menu {
         System.out.print("Esquema tático (ex: 4-3-3): ");
         String esquema = scanner.nextLine().trim();
         int exp = lerInteiro("Anos de experiência: ");
-        controller.cadastrarTecnico(nome, idade, esquema, exp);
+        timeController.cadastrarTecnico(nome, idade, esquema, exp);
+    }
+
+    private void removerTecnico() {
+        System.out.print("Nome do técnico a remover: ");
+        timeController.removerTecnico(scanner.nextLine().trim());
     }
 
     private void associarJogador() {
@@ -98,7 +115,7 @@ public class Menu {
         String jogador = scanner.nextLine().trim();
         System.out.print("Nome do time: ");
         String time = scanner.nextLine().trim();
-        controller.associarJogadorAoTime(jogador, time);
+        timeController.associarJogadorAoTime(jogador, time);
     }
 
     private void associarTecnico() {
@@ -106,16 +123,14 @@ public class Menu {
         String tecnico = scanner.nextLine().trim();
         System.out.print("Nome do time: ");
         String time = scanner.nextLine().trim();
-        controller.associarTecnicoAoTime(tecnico, time);
+        timeController.associarTecnicoAoTime(tecnico, time);
     }
 
     private void verElenco() {
         System.out.print("Nome do time: ");
-        String time = scanner.nextLine().trim();
-        controller.listarJogadoresDoTime(time);
+        timeController.listarJogadoresDoTime(scanner.nextLine().trim());
     }
 
-    /** Lê um inteiro com tratamento de exceção. */
     private int lerInteiro(String prompt) {
         while (true) {
             System.out.print(prompt);
