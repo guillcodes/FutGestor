@@ -13,7 +13,6 @@ O sistema permite cadastrar times, jogadores, técnicos e partidas, além de ger
 - Cadastro de partidas
 - Listagem de partidas
 - Classificação do campeonato
-- Ranking de artilheiros
 - Salvamento dos dados em arquivos
 
 -Estrutura do projeto
