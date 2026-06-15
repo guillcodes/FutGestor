@@ -1,0 +1,93 @@
+[11/06/2026 13:21:50] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 13:21:50] TimeController iniciado. 0 time(s) carregado(s).
+[11/06/2026 13:52:01] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 13:52:01] TimeController iniciado. 0 time(s) carregado(s).
+[11/06/2026 13:52:14] Times salvos: 1 registro(s).
+[11/06/2026 13:52:14] Time cadastrado: Coritiba / curitiba
+[11/06/2026 13:52:55] Técnicos salvos: 1 registro(s).
+[11/06/2026 13:52:55] Técnico cadastrado: Rafao
+[11/06/2026 14:09:05] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:09:05] TimeController iniciado. 1 time(s) carregado(s).
+[11/06/2026 14:10:41] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:10:41] TimeController iniciado. 1 time(s) carregado(s).
+[11/06/2026 14:11:20] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:11:20] TimeController iniciado. 1 time(s) carregado(s).
+[11/06/2026 14:11:37] ERRO ao associar jogador: Jogador não encontrado: a
+[11/06/2026 14:13:05] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:13:06] TimeController iniciado. 1 time(s) carregado(s).
+[11/06/2026 14:13:17] Times salvos: 0 registro(s).
+[11/06/2026 14:13:17] Time removido: Coritiba
+[11/06/2026 14:13:42] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:13:42] TimeController iniciado. 0 time(s) carregado(s).
+[11/06/2026 14:17:01] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:17:01] TimeController iniciado. 0 time(s) carregado(s).
+[11/06/2026 14:17:17] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:17:17] TimeController iniciado. 0 time(s) carregado(s).
+[11/06/2026 14:19:16] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:19:16] TimeController iniciado. 0 time(s) carregado(s).
+[11/06/2026 14:19:16] PartidaController iniciado. 0 partida(s) carregada(s).
+[11/06/2026 14:22:50] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:22:50] TimeController iniciado. 0 time(s) carregado(s).
+[11/06/2026 14:22:50] PartidaController iniciado. 0 partida(s) carregada(s).
+[11/06/2026 14:23:31] Times salvos: 1 registro(s).
+[11/06/2026 14:23:31] Time cadastrado: Kummer / Chapeco
+[11/06/2026 14:23:57] Times salvos: 2 registro(s).
+[11/06/2026 14:23:57] Time cadastrado: Rafao / Sao Paulo
+[11/06/2026 14:24:16] Partidas salvas: 1 registro(s).
+[11/06/2026 14:24:16] Partida cadastrada: Kummer 2 x 0 Rafao
+[11/06/2026 14:25:53] Times salvos: 1 registro(s).
+[11/06/2026 14:25:53] Time removido: Kummer
+[11/06/2026 14:26:07] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:26:07] TimeController iniciado. 1 time(s) carregado(s).
+[11/06/2026 14:26:07] PartidaController iniciado. 1 partida(s) carregada(s).
+[11/06/2026 14:26:16] Times salvos: 0 registro(s).
+[11/06/2026 14:26:16] Time removido: Rafao
+[11/06/2026 14:28:13] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:28:13] TimeController iniciado. 0 time(s) carregado(s).
+[11/06/2026 14:28:13] PartidaController iniciado. 1 partida(s) carregada(s).
+[11/06/2026 14:28:34] Times salvos: 1 registro(s).
+[11/06/2026 14:28:34] Time cadastrado: Flamengo / Rio de Janeiro
+[11/06/2026 14:28:45] Times salvos: 2 registro(s).
+[11/06/2026 14:28:45] Time cadastrado: Santos / Sao Paulo
+[11/06/2026 14:28:58] Times salvos: 3 registro(s).
+[11/06/2026 14:28:58] Time cadastrado: Palmeiras / Sao Paulo
+[11/06/2026 14:29:17] Partidas salvas: 2 registro(s).
+[11/06/2026 14:29:17] Partida cadastrada: Flamengo 3 x 1 Santos
+[11/06/2026 14:29:34] Partidas salvas: 3 registro(s).
+[11/06/2026 14:29:34] Partida cadastrada: Palmeiras 2 x 2 Flamengo
+[11/06/2026 14:33:25] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:33:25] TimeController iniciado. 3 time(s) carregado(s).
+[11/06/2026 14:33:25] PartidaController iniciado. 3 partida(s) carregada(s).
+[11/06/2026 14:36:36] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:36:36] TimeController iniciado. 3 time(s) carregado(s).
+[11/06/2026 14:36:36] PartidaController iniciado. 3 partida(s) carregada(s).
+[11/06/2026 14:39:01] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 14:39:01] TimeController iniciado. 3 time(s) carregado(s).
+[11/06/2026 14:39:01] PartidaController iniciado. 3 partida(s) carregada(s).
+[11/06/2026 15:20:26] JogadorController iniciado. 0 jogador(es) carregado(s).
+[11/06/2026 15:20:26] TimeController iniciado. 3 time(s) carregado(s).
+[11/06/2026 15:20:26] PartidaController iniciado. 3 partida(s) carregada(s).
+[15/06/2026 15:02:27] JogadorController iniciado. 0 jogador(es) carregado(s).
+[15/06/2026 15:02:27] TimeController iniciado. 3 time(s) carregado(s).
+[15/06/2026 15:02:27] PartidaController iniciado. 3 partida(s) carregada(s).
+[15/06/2026 15:02:56] Times salvos: 3 registro(s).
+[15/06/2026 15:02:56] Time editado: Flamengo → flamengo
+[15/06/2026 15:03:08] Times salvos: 2 registro(s).
+[15/06/2026 15:03:08] Time removido: flamengo
+[15/06/2026 15:03:34] Técnicos salvos: 2 registro(s).
+[15/06/2026 15:03:34] Técnico cadastrado: bob
+[15/06/2026 15:03:47] Técnicos salvos: 1 registro(s).
+[15/06/2026 15:03:47] Técnico removido: bob
+[15/06/2026 15:04:28] Jogadores salvos: 1 registro(s).
+[15/06/2026 15:04:28] Jogador cadastrado: bob | #67
+[15/06/2026 15:04:55] Jogadores salvos: 1 registro(s).
+[15/06/2026 15:04:55] Jogador editado: bob
+[15/06/2026 15:05:15] Times salvos: 2 registro(s).
+[15/06/2026 15:05:15] Jogador bob associado ao time Santos
+[15/06/2026 15:05:34] Times salvos: 2 registro(s).
+[15/06/2026 15:05:34] Técnico Rafao associado ao time Santos
+[15/06/2026 15:06:07] Partidas salvas: 4 registro(s).
+[15/06/2026 15:06:07] Partida cadastrada: Santos 35 x 1 Palmeiras
+[15/06/2026 15:07:25] Jogadores salvos: 1 registro(s).
+[15/06/2026 15:07:25] Jogador editado: bob
+[15/06/2026 15:07:42] Sistema encerrado pelo usuário.

@@ -1,0 +1,10 @@
+=== TIMES ===
+Nome: Santos
+Cidade: Sao Paulo
+Técnico: Rafao
+Jogadores: 1
+---
+Nome: Palmeiras
+Cidade: Sao Paulo
+Jogadores: 0
+---
